@@ -1,0 +1,1 @@
+package dk.sdu.cbse.gamelab;/** Per-frame update contract. */ public interface IEntityProcessingService{void process(GameData d,double dt);}

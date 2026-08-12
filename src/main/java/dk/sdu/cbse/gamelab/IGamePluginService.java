@@ -1,0 +1,1 @@
+package dk.sdu.cbse.gamelab;/** Lifecycle contract. Pre: GameData is non-null. */ public interface IGamePluginService{void start(GameData d);void stop(GameData d);}

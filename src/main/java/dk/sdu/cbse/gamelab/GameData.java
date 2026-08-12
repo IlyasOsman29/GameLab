@@ -1,0 +1,2 @@
+package dk.sdu.cbse.gamelab;
+import java.util.*; public final class GameData{public final List<Entity> entities=new ArrayList<>();public final Set<String> keys=new HashSet<>();public int width=800,height=600;public void wrap(Entity e){if(e.x<0)e.x=width;if(e.x>width)e.x=0;if(e.y<0)e.y=height;if(e.y>height)e.y=0;}}

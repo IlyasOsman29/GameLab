@@ -1,0 +1,1 @@
+package dk.sdu.cbse.gamelab;/** Runs after entity processors. */ public interface IPostEntityProcessingService{void process(GameData d,double dt);}
