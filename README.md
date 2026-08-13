@@ -2,6 +2,10 @@
 
 This is a small JavaFX Asteroids game built from Maven modules.
 
+## Course progression
+
+This is the first lab. It introduces the game components and their shared interfaces before automatic service discovery is added in [JavaLab](https://github.com/IlyasOsman29/JavaLab).
+
 | Module | Job |
 |---|---|
 | `common` | Shared entities, game data and interfaces |
