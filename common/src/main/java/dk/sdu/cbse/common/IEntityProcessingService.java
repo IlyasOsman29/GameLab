@@ -1,14 +1,10 @@
 package dk.sdu.cbse.common;
 
-/** Per-frame behaviour contract for one gameplay component. */
+/** Updates one type of game entity. */
 public interface IEntityProcessingService {
     /**
-     * Updates the entities handled by the component for one frame.
-     *
-     * <p><strong>Preconditions:</strong> {@code gameData} is non-null and
-     * {@code deltaSeconds >= 0}. The caller invokes normal processors before post-processors.</p>
-     * <p><strong>Postconditions:</strong> owned entity state reflects at most one frame of elapsed
-     * time; unrelated entity types remain valid; the method does not require optional components.</p>
+     * <p><strong>Pre:</strong> {@code gameData} is not null and {@code deltaSeconds >= 0}.</p>
+     * <p><strong>Post:</strong> the component's entities have been updated for one frame.</p>
      *
      * @param gameData shared mutable world state
      * @param deltaSeconds elapsed seconds since the previous frame

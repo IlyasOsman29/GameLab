@@ -1,16 +1,11 @@
 package dk.sdu.cbse.common;
 
-/** Contract for cross-entity rules that run after all normal entity processors. */
+/** Runs rules that need more than one entity, such as collisions. */
 public interface IPostEntityProcessingService {
     /**
-     * Applies rules that need the final entity positions for the current frame.
-     *
-     * <p><strong>Preconditions:</strong> {@code gameData} is non-null,
-     * {@code deltaSeconds >= 0}, and every {@link IEntityProcessingService} has completed for the
-     * frame.</p>
-     * <p><strong>Postconditions:</strong> detected interactions are applied atomically after
-     * iteration; removed entities no longer appear in {@code gameData}; created result entities are
-     * valid for processing in the next frame.</p>
+     * <p><strong>Pre:</strong> {@code gameData} is not null, {@code deltaSeconds >= 0}, and the
+     * normal entity processors have finished.</p>
+     * <p><strong>Post:</strong> detected interactions have been applied to {@code gameData}.</p>
      *
      * @param gameData shared mutable world state
      * @param deltaSeconds elapsed seconds for the current frame
