@@ -1,2 +1,0 @@
-package dk.sdu.cbse.gamelab;
-public final class Entity{public String type,owner="";public double x,y,dx,dy,rotation,radius;public int health=1;public Entity(String t,double x,double y,double r){type=t;this.x=x;this.y=y;radius=r;}}
